@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'capistrano-bun'
-  spec.version       = '1.0.3'
+  spec.version       = '1.0.4'
   spec.authors       = ['Ferhat Ziba']
   spec.email         = ['fero.ziba@gmail.com']
   spec.description   = %q{bun support for Capistrano 3.x}

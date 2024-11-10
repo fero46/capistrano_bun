@@ -64,6 +64,24 @@ namespace :bun do
       end
     end
   end
+
+  desc <<-DESC
+        Build via bun. This command is executed within the same context \
+        as bun install using the bun_roles and bun_target_path \
+        variables.
+
+        This task is strictly opt-in. The main reason you'll want to run this \
+        would be after changing bun versions on the server.
+    DESC
+  task :build do
+    on roles fetch(:bun_roles) do
+      within fetch(:bun_target_path, release_path) do
+        with fetch(:bun_env_variables, {}) do
+          execute :bun, 'build'
+        end
+      end
+    end
+  end
 end
 
 namespace :load do
