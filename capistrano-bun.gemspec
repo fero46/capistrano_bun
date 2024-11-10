@@ -5,11 +5,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 Gem::Specification.new do |spec|
   spec.name          = 'capistrano-bun'
   spec.version       = '1.0.3'
-  spec.authors       = ['Scott Walkinshaw']
-  spec.email         = ['scott.walkinshaw@gmail.com']
+  spec.authors       = ['Ferhat Ziba']
+  spec.email         = ['fero.ziba@gmail.com']
   spec.description   = %q{bun support for Capistrano 3.x}
   spec.summary       = %q{bun support for Capistrano 3.x}
-  spec.homepage      = 'https://github.com/capistrano/bun'
+  spec.homepage      = 'https://github.com/fero46/bun'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
